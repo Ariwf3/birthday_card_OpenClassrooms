@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carte surprise openclassrooms</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+</head>
+<body>
+   
+    <main class="text-center">
+        <h1>C'est une journée très spéciale pour toi!<button id="clickme_main" class="btn"> Clique sur moi ^^</button></h1>
+        <p>
+            <button title="Découvre la suite.." class="btn btn btn-success btn-perso" id="btn-perso1">Beaucoup de personnes tiennent à toi..</button>
+        </p>
+        <p>
+            <button class="btn btn-info btn-perso" id="btn-perso2">Tes amis et famille ont tenu à te le rappeler et surtout te souhaiter..
+            </button>
+        </p>    
+        <p>
+            <button class="btn btn btn-warning btn-perso" id="btn-perso3">Un joyeux anniversaire plein de joie et d'allégresse !!<span id="clickme_2" class="btn"> Clique sur moi ^_^</span>
+            </button>
+        </p>   
+    </main>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/easing.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/anniversaire.js"></script>
+    <!-- Le script qui suit à été placé ici car je rencontrais un bug qui empêchaient ces fonctions de s'exécuter (elles servent à jouer les sons) tant qu'elles n'étaient pas dans le domaine du html -->
+    <script>
+            function cheers() {  // déclaration de fonction pour lire son
+                var audio = new Audio("js/cheer3.mp3");
+                audio.play();
+            } // fin fonction cheers 
+            function clap() {  
+                var audio1 = new Audio("js/Clapping.mp3");
+                audio1.play();
+            } // fin fonction clap 
+            $("#btn-perso3").on("click", function() { // déclenchement son au clic
+                cheers(),
+                setTimeout(clap,3000)
+            })
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+Bonjour,
+
+Voici une description rapide de la façon dont j'ai abordé l'exercice, Merci pour votre lecture.
+
+Partie Html/Css:
+
+J'ai commencé par la partie html qui contient outre les déclarations des scripts et des feuilles de style un titre principal suivi de 3 paragraphes.
+
+Ces balise "h1" et "p" contiennent des boutons stylisés à l'aide de bootstrap ainsi que le texte et sont destinés à disparaître/apparaître plus tard à l'aide jquery. Les paragraphes sont donc dans l'état en css "display:none" pour apparaître ensuite au moment voulu. Le tout en encadré par la balise sémantique "main".
+A noter qu'un morceau de script à été placé dans le html pour une raison de bug que j'explique en commentaitre.
+
+Pour la feuille de style j'ai essayé de faire simple en mettant des tailles, couleurs et placements adéquats. Les classes et id ont pour but de faciliter la manipulation du DOM avec le jQuery ensuite.
+
+
+Partie jQuery:
+
+J'ai sélectionné mes éléments grâce aux id et classes que j'avais attribué aux éléments dans la partie html/css pour ensuite agir principalement sur l'évènement "click".
+Le but était de faire disparaître les paragraphes cliqués et de faire apparaître les suivants au fur et à mesure à l'aide des méthodes "hide/show" ou "fadeIn/fadeOut".
+L'action au clic du dernier paragraphe permet de changer l'image de fond, de jouer un son et modifie le style du h1. J'ai pour cela utilisé les méthodes "addClass" et "css" permettant respectivement d'attribuer une classe et de modifier le css du html.
+
+Enfin, le son est joué à l'aide de deux fonctions créées pour l'occasion qui permettent de construire et de jouer les éléments audio. Il y a en fait deux sons différents joués en décalés grâce à la méthode "setTimeout" avec laquelle j'ai fait un décalage de 3 secondes.
+Ces fonctions sont dans un morceau de script à l'intérieur du html car pour une raison que j'ignore toujours elles ne fonctionnaient dans la page de script séparée.
+
+						
+
+				Voilà desolé si c'était un peu long! Merci beaucoup pour la correction ^^
+
+
+
+
+
+
+

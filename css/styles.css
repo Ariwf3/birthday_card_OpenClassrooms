@@ -1,0 +1,63 @@
+
+
+body 
+{
+    background:#fab1a0;
+    font-size: 1em;
+}
+
+h1 {
+    font-family: cursive;
+    color: black;
+    /* linear-gradient permet un dégradé de couleur */
+    background: linear-gradient(0.60turn, #3f87a6, #ebf8e1, #f69d3c);
+    width: 25em;
+    height: 5em;
+    line-height: 5em;
+    font-size: 2.5em;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 15px;
+    border-radius:10px;
+    padding: 6px 12px;
+}
+
+/* petit bouton indiquant de cliquer */
+#clickme_main {
+    margin-left: 11px;
+    padding: 3px 6px;
+    font-size: 0.4em;
+    border-radius: 5px;
+    background: #74b9ff;
+    color: #fff;
+}
+
+/* boutons suivants */
+.btn-perso {
+    width: 35em;
+    height: 5em;
+    /* Je cache les boutons avec les messages pour les faire apparître plus tard */
+    display: none;  
+}
+
+#btn-perso3{
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    
+}
+
+#clickme_2 {
+    background:#e84393;
+    color: white;
+    margin-left: 11px;
+    padding: 3px 6px;
+    font-size: 0.7em;
+    border-radius: 5px;
+}
+
+/* image de fond apparaissant après le clic du dernier bouton */
+.image {
+    background-image: url("../images/anniv.jpg");
+    background-repeat: no-repeat;
+}
+
